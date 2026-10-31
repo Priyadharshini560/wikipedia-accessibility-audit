@@ -1,0 +1,2 @@
+issue_id,page_or_component,wcag_reference,evidence,severity,user_impact,recommended_fix,owner,status
+WEB-001,Navigation menu,2.1.1 Keyboard,Escape did not close menu in initial test,Pending verification,To be determined,Verify keyboard close mechanism,Student,Open
