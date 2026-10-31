@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Accessibility Audit Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -15,20 +18,53 @@
     </header>
 
     <main>
+
         <section>
             <h2>Website Details</h2>
             <p>Website: Wikipedia</p>
+            <p>Website URL: 
+                <a href="https://www.wikipedia.org/" target="_blank">
+                    https://www.wikipedia.org/
+                </a>
+            </p>
             <p>Accessibility Score: 100</p>
         </section>
 
         <section>
             <h2>Audit Summary</h2>
-            <p>Performance: 100</p>
-            <p>Best Practices: 77</p>
-            <p>SEO: 92</p>
+            <div id="results">
+                <p>Loading audit results...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Testing Overview</h2>
+            <ul>
+                <li>Keyboard Navigation</li>
+                <li>Focus Visibility</li>
+                <li>Search Box Accessible Name</li>
+                <li>Image Alternative Text</li>
+                <li>200% Browser Zoom</li>
+                <li>Responsive Layout</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Accessibility Audit</h2>
+            <p>
+                This dashboard presents the accessibility testing
+                results of the Wikipedia website using Lighthouse
+                and manual testing methods.
+            </p>
         </section>
 
     </main>
+
+    <footer>
+        <p>Accessibility Baseline & Repository Architecture Audit</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
