@@ -1,36 +1,29 @@
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
+const auditResults = [
+    {
+        name: "Performance",
+        score: 100
+    },
+    {
+        name: "Accessibility",
+        score: 100
+    },
+    {
+        name: "Best Practices",
+        score: 77
+    },
+    {
+        name: "SEO",
+        score: 92
+    }
+];
 
-header {
-    background-color: #243b55;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    border-radius: 10px;
-}
+const results = document.getElementById("results");
 
-main {
-    max-width: 800px;
-    margin: 25px auto;
-}
+auditResults.forEach(function(item) {
+    const paragraph = document.createElement("p");
 
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
+    paragraph.textContent = item.name + ": " + item.score;
 
-h2 {
-    color: #243b55;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-}
+    results.appendChild(paragraph);
+});
