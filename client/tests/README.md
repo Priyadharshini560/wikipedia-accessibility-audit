@@ -1,15 +1,18 @@
-# Testing
+# Accessibility Testing
 
-This folder contains the manual accessibility testing checklist and test results for the Wikipedia website.
+This folder contains accessibility testing documentation and test cases.
 
-## Testing Methods
-- Keyboard navigation
-- Focus visibility
-- Search box accessible name
-- Image alternative text
-- Browser zoom
-- Responsive layout
-- Lighthouse accessibility audit
+## Test Files
 
-## Purpose
-To identify accessibility issues and document the testing evidence.
+- `accessibility-checklist.md` - Contains manual accessibility test results.
+
+## Testing Tools
+
+- Google Lighthouse
+- Keyboard navigation testing
+- Browser zoom testing
+- Screen responsiveness testing
+
+## Test Website
+
+https://www.wikipedia.org/
